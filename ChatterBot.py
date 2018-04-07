@@ -20,3 +20,4 @@ api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
 # Create a function that tweets
 # CODE GOES HERE
+print(f'{consumer_key}')
