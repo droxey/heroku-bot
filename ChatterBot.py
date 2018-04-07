@@ -13,6 +13,8 @@ consumer_secret = os.getenv("CONSUMER_SECRET")
 access_token = os.getenv("ACCESS_TOKEN")
 access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
 
+print(f'Consumer Key: {consumer_key}')
+
 try:
     # Setup Tweepy API Authentication
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -24,4 +26,3 @@ except Exception, e:
 
 # Create a function that tweets
 # CODE GOES HERE
-print(f'{consumer_key}')
